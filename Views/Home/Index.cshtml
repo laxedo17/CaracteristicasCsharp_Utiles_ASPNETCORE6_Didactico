@@ -1,0 +1,26 @@
+@{
+    #pragma warning disable CS8602
+}
+@model IEnumerable<string>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width">
+    <title>Caracteristicas Linguaxe</title>
+</head>
+
+<body>
+    <ul>
+        @foreach (string s in Model)
+        {
+            <li>@s</li>
+        }
+    </ul>
+</body>
+
+</html>
